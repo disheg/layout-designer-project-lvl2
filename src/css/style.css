@@ -66,16 +66,24 @@ h4 {
   line-height: 1.6em;
 }
 
+.border-1-white {
+  border: 1px solid #FFFFFF;
+}
+
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
 
 .mb-30 {
   margin-bottom: 30px;
-}
-
-.mt-100 {
-  margin-top: 100px;
 }
 
 .fs-11 {
@@ -101,6 +109,10 @@ h4 {
 
 .green {
   background-color: #34c176;
+}
+
+.color-orange {
+  color: #f89202;
 }
 
 .transparent {
@@ -138,6 +150,10 @@ h4 {
   border-radius: 3px;
 }
 
+.btn-description {
+  width: 100%;
+}
+
 .page-pricing-body .card-item:nth-child(1) {
   background-image: url(../images/subscribe_1.png);
   background-repeat: no-repeat;
@@ -172,12 +188,194 @@ h4 {
 }
 
 .item-btn {
+  width: 100%;
   margin-top: 24px;
 }
 
 .item-footer {
   margin-top: 64px;
   margin-bottom: 46px;
+}
+
+.text-small {
+  font-size: 12.8px;
+  line-height: 19.2px;
+}
+
+.text-size-1 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-size-2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.text-size-3 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.text-size-4 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.text-size-5 {
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.text-size-6 {
+  font-size: 56px;
+  line-height: 84px;
+}
+
+.text-size-7 {
+  font-size: 64px;
+  line-height: 96px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 45px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.font {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 1.6em;
+}
+
+.border-1-white {
+  border: 1px solid #FFFFFF;
+}
+
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: white;
+}
+
+.pos-ab {
+  position: absolute;
+  width: 100%;
+}
+
+.green {
+  background-color: #34c176;
+}
+
+.color-orange {
+  color: #f89202;
+}
+
+.transparent {
+  background: transparent;
+}
+
+.news {
+  margin-top: 48px;
+  gap: 64px;
+}
+
+.news-item {
+  gap: 50px;
+}
+
+.news-item-inner {
+  display: block;
+}
+
+.news-item-title {
+  font-size: 30px;
+}
+
+.news-item-body {
+  margin-top: 30px;
+}
+
+.news-item-footer {
+  margin-top: 24px;
+  gap: 16px;
+}
+
+.news-item-btn {
+  margin-top: 48px;
+  padding: 17px 30px 17px 30px;
+  background: transparent;
+}
+
+.columns-2 {
+  columns: 2;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.left-144 {
+  left: 144px;
+}
+
+.btn-app {
+  padding: 17px 40px 17px 40px;
+}
+
+.border-radius-32 {
+  border-radius: 32px;
+}
+
+.red {
+  background-color: #95390c;
 }
 
 @font-face {
@@ -217,23 +415,26 @@ input {
 .flex.between {
   justify-content: space-between;
 }
+.flex.align-center {
+  align-items: center;
+}
 .flex.center {
   justify-content: center;
   align-items: center;
 }
 
 .btn {
-  width: 100%;
   height: 57px;
-  text-transform: uppercase;
-  border: 1px solid #FFFFFF;
-  border-radius: 5px;
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px 0 20px;
+}
+
+.title {
+  margin-top: 100px;
 }
 
 @media (min-width: 1240px) {

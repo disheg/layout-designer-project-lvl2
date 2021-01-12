@@ -51,16 +51,25 @@ $text-size: (
   line-height: 1.6em;
 }
 
+.border-1 {
+  &-white {
+    border: 1px solid #FFFFFF;
+  }
+}
+
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
 .mt-24 {
   margin-top: 24px;
 }
 
 .mb-30 {
   margin-bottom: 30px;
-}
-
-.mt-100 {
-  margin-top: 100px;
 }
 
 .fs-11 {
@@ -86,6 +95,10 @@ $text-size: (
 
 .green {
   background-color: $green;
+}
+
+.color-orange {
+  color: $orange;
 }
 
 .transparent {
