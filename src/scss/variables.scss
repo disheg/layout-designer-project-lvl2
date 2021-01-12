@@ -1,0 +1,44 @@
+$black: #08020d;
+$gray: #e0e0e0;
+$dark-gray: #cacaca;
+$dark: #3c3b3d;
+$green: #34c176;
+$orange: #f89202;
+$purple: #5328a1;
+$red: #95390c;
+
+$mode: "desktop";
+$h-size-mobile: 30px, 18px, 16px, 18px;
+$h-size-desktop: 60px, 38px, 24px;
+
+$header-size: (
+  h1: (desktop: (font-size: 60px, line-height: 90px), mobile: 30px),
+  h2: (desktop: (font-size: 38px, line-height: 57px), mobile: 18px),
+  h3: (desktop: (font-size: 24px, line-height: 45px), mobile: 16px),
+  h4: (desktop: (font-size: 18px, line-height: 27px), mobile: 18px)
+);
+$text-size: (
+  text-small: (font-size: 12.8px, line-height: 19.2px),
+  text-size-1: (font-size: 16px, line-height: 24px),
+  text-size-2: (font-size: 24px, line-height: 36px),
+  text-size-3: (font-size: 32px, line-height: 48px),
+  text-size-4: (font-size: 40px, line-height: 60px),
+  text-size-5: (font-size: 48px, line-height: 72px),
+  text-size-6: (font-size: 56px, line-height: 84px),
+  text-size-7: (font-size: 64px, line-height: 96px)
+);
+
+@each $name, $sizes in $text-size {
+  .#{$name} {
+    font-size: map-get($sizes, font-size);
+    line-height: map-get($sizes, line-height);
+  }
+}
+
+@each $name, $modes in $header-size {
+  $size: map-get($modes, $mode);
+  #{$name} {
+    font-size: map-get($size, font-size);
+    line-height: map-get($size, line-height);
+  }
+}

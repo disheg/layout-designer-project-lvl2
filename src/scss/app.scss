@@ -1,0 +1,122 @@
+@import 'variables';
+@import 'page-description';
+
+@font-face {
+    font-weight: 400;
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+.body {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+}
+
+button,
+input {
+  font-family: 'Roboto';
+  margin: 0;
+  border: 0;
+}
+
+.font {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 1.6em;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: white;
+}
+
+.pos-ab {
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+@media (min-width: 1240px) {
+  .container {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+  }
+}
+
+/*** Header ***/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 25px;
+}
+
+.header-left-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-right: 16px;
+}
+
+.header-name {
+  display: flex;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 12px;
+}
+
+.header-search-input {
+  width: 248px;
+  height: 25px;
+
+  padding: 5px 0 5px 10px;
+
+  border-radius: 50px;
+
+  background-color: $dark;
+}
