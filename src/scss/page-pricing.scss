@@ -1,0 +1,35 @@
+@for $i from 1 through 3 {
+    .page-pricing-body .card-item:nth-child(#{$i}) {
+        background-image: url(../images/subscribe_#{$i}.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.card-item {
+    padding: 20px;
+    width: 367px;
+}
+
+.page-pricing-body {
+    margin-top: 46px;
+    margin-bottom: 39px;
+}
+
+.item-title {
+
+}
+
+.item-price {
+    display: flex;
+    margin-top: 180px;
+}
+
+.item-btn {
+    margin-top: 24px;
+}
+
+.item-footer {
+    margin-top: 64px;
+    margin-bottom: 46px;
+}

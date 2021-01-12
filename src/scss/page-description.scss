@@ -18,29 +18,18 @@
 .form-input {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
 }
 
 .input {
     box-sizing: border-box;
 
+    flex-grow: 1;
+
     padding: 15px;
 
-    width: 273px;
     height: 50px;
 
     border: 2px solid #CACACA;
     border-radius: 3px;
-
-    background: transparent;
-}
-
-.form-btn {
-    margin-top: 24px;
-
-    width: 570px;
-    height: 57px;
-
-    border-radius: 5px;
-
-    background-color: $green;
 }
