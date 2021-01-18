@@ -106,14 +106,32 @@ input {
 
 .header {
   display: flex;
-  justify-content: space-between;
+
+  @media screen and (max-width: $mobile-size){
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $mobile-size){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   margin-top: 25px;
 }
 
 .header-left-side {
   display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: $mobile-size){
+    flex-direction: column;
+  }
+  
+  @media screen and (min-width: $mobile-size){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 88px;
+  }
 }
 
 .header-logo {
@@ -122,6 +140,7 @@ input {
 
 .header-name {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -131,7 +150,15 @@ input {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: $mobile-size){
+    flex-direction: column;
+    margin-top: 17px;
+  }
+  @media screen and (min-width: $mobile-size){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .nav-item {
@@ -147,6 +174,9 @@ input {
   border-radius: 50px;
 
   background-color: $dark;
+  @media screen and (max-width: $mobile-size){
+    margin-top: 18px;
+  }
 }
 
 

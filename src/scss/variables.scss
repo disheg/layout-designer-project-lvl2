@@ -7,15 +7,34 @@ $orange: #f89202;
 $purple: #5328a1;
 $red: #95390c;
 
-$mode: "desktop";
+$mode: ("desktop", "mobile");
+$mode-length: length($mode);
+$breakpoints: (
+  breakpoint-small: 768px,
+  breakpoint-medium: 992px,
+  breakpoint-large: 1200px
+);
+$mobile-size : 900px;
 $h-size-mobile: 30px, 18px, 16px, 18px;
 $h-size-desktop: 60px, 38px, 24px;
 
 $header-size: (
-  h1: (desktop: (font-size: 60px, line-height: 90px), mobile: 30px),
-  h2: (desktop: (font-size: 38px, line-height: 57px), mobile: 18px),
-  h3: (desktop: (font-size: 24px, line-height: 45px), mobile: 16px),
-  h4: (desktop: (font-size: 18px, line-height: 27px), mobile: 18px)
+  h1: (
+    desktop: (font-size: 60px, line-height: 90px),
+    mobile: (font-size: 30px, line-height: 45px)
+  ),
+  h2: (
+    desktop: (font-size: 38px, line-height: 57px),
+    mobile: (font-size: 18px, line-height: 27px),
+  ),
+  h3: (
+    desktop: (font-size: 24px, line-height: 45px),
+    mobile: (font-size: 16px, line-height: 24px)
+  ),
+  h4: (
+    desktop: (font-size: 18px, line-height: 27px),
+    mobile: (font-size: 18px, line-height: 24px)
+  )
 );
 $text-size: (
   text-small: (font-size: 12.8px, line-height: 19.2px),
@@ -35,11 +54,20 @@ $text-size: (
   }
 }
 
+@mixin size($data) {
+  font-size: map-get($data, font-size);
+  line-height: map-get($data, line-height);
+}
+
 @each $name, $modes in $header-size {
-  $size: map-get($modes, $mode);
+  $modes-length: length($modes);
+  $desktop: map-get($modes, desktop);
+  $mobile: map-get($modes, mobile);
   #{$name} {
-    font-size: map-get($size, font-size);
-    line-height: map-get($size, line-height);
+    @include size($desktop);
+    @media screen and (max-width: $mobile-size) {
+      @include size($mobile);
+    }
   }
 }
 
@@ -99,6 +127,7 @@ $text-size: (
 
 .fs-11 {
   font-size: 11px;
+  line-height: 12.89px;
 }
 
 .text-center {
