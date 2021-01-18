@@ -17,6 +17,14 @@
     flex-direction: column;
   }
 
+  &.row {
+    flex-direction: row;
+  }
+
+  &.justify-start {
+    justify-content: flex-start;
+  }
+
   &.between {
     justify-content: space-between;
   }
@@ -43,8 +51,21 @@ body,
 h1,
 h2,
 h3,
-ul {
+ul,
+li {
   margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul, li {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 button,
@@ -111,7 +132,6 @@ input {
 .navbar {
   display: flex;
   justify-content: space-between;
-  list-style: none;
 }
 
 .nav-item {
@@ -127,4 +147,11 @@ input {
   border-radius: 50px;
 
   background-color: $dark;
+}
+
+
+/*** Footer ***/
+
+.footer {
+  background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
 }

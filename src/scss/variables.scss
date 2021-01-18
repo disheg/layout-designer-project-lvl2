@@ -61,15 +61,40 @@ $text-size: (
   border-radius: 5px;
 }
 
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
 .mr-16 {
   margin-right: 16px;
 }
+
 .mt-24 {
   margin-top: 24px;
 }
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
+}
+
+.pb-74 {
+  padding-bottom: 74px;
 }
 
 .fs-11 {
@@ -100,6 +125,11 @@ $text-size: (
 .color-orange {
   color: $orange;
 }
+
+.color-gray {
+  color: $gray;
+}
+
 
 .transparent {
   background: transparent;
