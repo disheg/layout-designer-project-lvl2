@@ -2,7 +2,6 @@
     .page-pricing-body .card-item:nth-child(#{$i}) {
         background-image: url(../images/subscribe_#{$i}.png);
         background-repeat: no-repeat;
-        background-size: cover;
     }
 }
 
@@ -12,6 +11,15 @@
 }
 
 .page-pricing-body {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $mobile-size){
+        flex-direction: column;
+        gap: 27px;
+    }
+    @media screen and (min-width: $mobile-size){    
+        justify-content: space-between;
+    }
     margin-top: 46px;
     margin-bottom: 39px;
 }

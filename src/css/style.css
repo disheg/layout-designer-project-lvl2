@@ -228,19 +228,16 @@ h4 {
 .page-pricing-body .card-item:nth-child(1) {
   background-image: url(../images/subscribe_1.png);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .page-pricing-body .card-item:nth-child(2) {
   background-image: url(../images/subscribe_2.png);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .page-pricing-body .card-item:nth-child(3) {
   background-image: url(../images/subscribe_3.png);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card-item {
@@ -249,8 +246,21 @@ h4 {
 }
 
 .page-pricing-body {
+  display: flex;
+  align-items: center;
   margin-top: 46px;
   margin-bottom: 39px;
+}
+@media screen and (max-width: 900px) {
+  .page-pricing-body {
+    flex-direction: column;
+    gap: 27px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .page-pricing-body {
+    justify-content: space-between;
+  }
 }
 
 .item-price {
@@ -448,15 +458,24 @@ h4 {
 }
 
 .news-item {
+  display: flex;
   gap: 50px;
 }
-
-.news-item-inner {
-  display: block;
+@media screen and (max-width: 900px) {
+  .news-item {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 900px) {
+  .news-item {
+    justify-content: space-between;
+  }
 }
 
-.news-item-title {
-  font-size: 30px;
+@media screen and (max-width: 900px) {
+  .news-image {
+    order: -1;
+  }
 }
 
 .news-item-body {
@@ -471,6 +490,7 @@ h4 {
 .news-item-btn {
   margin-top: 48px;
   padding: 17px 30px 17px 30px;
+  width: max-content;
   background: transparent;
 }
 
@@ -478,8 +498,45 @@ h4 {
   columns: 2;
 }
 
+.app {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .app {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 900px) {
+  .app {
+    gap: 144px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .app-text {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app-image {
+    flex-direction: column;
+    order: -1;
+  }
+}
+@media screen and (min-width: 900px) {
+  .app-image {
+    width: 50%;
+  }
+}
+
 .mt-64 {
   margin-top: 64px;
+}
+
+.px-100 {
+  padding: 100px 0 100px 0;
 }
 
 .pos-r {
@@ -500,6 +557,11 @@ h4 {
 
 .red {
   background-color: #95390c;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
 }
 
 @font-face {

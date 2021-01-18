@@ -6,15 +6,24 @@
 }
 
 .news-item {
+    display: flex;
     gap: 50px;
+    @media screen and (max-width: $mobile-size){
+        flex-direction: column;
+    }
+    @media screen and (min-width: $mobile-size){
+        justify-content: space-between;
+    }
 }
 
 .news-item-inner {
-    display: block;
+
 }
 
-.news-item-title {
-    font-size: 30px;
+.news-image {
+    @media screen and (max-width: $mobile-size){
+        order: -1;
+    }
 }
 
 .news-item-body {
@@ -29,6 +38,7 @@
 .news-item-btn {
     margin-top: 48px;
     padding: 17px 30px 17px 30px;
+    width: max-content;
 
     background: transparent;
 }

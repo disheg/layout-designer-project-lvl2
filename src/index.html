@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 2 Disheg</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -54,7 +57,7 @@
 <section id="page-pricing">
     <div class="container text-center">
         <h2 class="title">Формы подписки</h2>
-        <div class="page-pricing-body flex between">
+        <div class="page-pricing-body">
             <div class="card-item flex column center">
                 <div class="item-title text-upper"><h3>Бесплатная</h3></div>
                 <div class="item-price text-upper">
@@ -105,9 +108,9 @@
         <h2 class="title text-center">Последние новости</h2>
         <div class="news flex column">
             <div class="news-item flex between">
-                <img src="images/Music to Be Murdered By.png">
+                <img class="news-image" src="images/Music to Be Murdered By.png">
                 <div class="news-item-inner">
-                    <div class="news-item-title">Music to Be Murdered By</div>
+                    <h3>Music to Be Murdered By</h3>
                     <div class="news-item-body">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</div>
                     <div class="news-item-footer flex align-center text-small">
                         <img class="" src='./images/avatar.png'>
@@ -123,7 +126,7 @@
             </div>
             <div class="news-item flex between">
                 <div class="news-item-inner">
-                    <div class="news-item-title">Ordinary Man</div>
+                    <h3>Ordinary Man</h3>
                     <div class="news-item-body">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</div>
                     <div class="news-item-footer flex align-center text-small">
                         <img class="" src='./images/avatar.png'>
@@ -136,23 +139,25 @@
                     </div>
                     <button class="news-item-btn btn border-radius-5 text-white border-1-white">К АЛЬБОМУ</button>
                 </div>
-                <img src="images/Ordinary Man.png">
+                <img class="news-image" src="images/Ordinary Man.png">
             </div>
         </div>
     </div>
 </section>
 <section id="page-app">
     <div class="container">
-        <h2 class="title text-center">Мобильное приложение</h2>
-        <div class="columns-2 mt-64">
-            <div>
-                <span>
-                    <p>Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
-                    <p>С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
-                </span>
-                <button class="btn-app btn border-radius-32 red text-upper text-white">Скачать</button>
+        <div class="px-100">
+            <h2 class="text-center">Мобильное приложение</h2>
+            <div class="app mt-64">
+                <div class="app-text">
+                    <span>
+                        <p>Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
+                        <p>С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
+                    </span>
+                    <button class="btn-app btn border-radius-32 red text-upper text-white">Скачать</button>
+                </div>
+                <div class="app-image"><img src='./images/iphone.png'></div>
             </div>
-            <div class="pos-r left-144"><img src='./images/iphone.png'></div>
         </div>
     </div>
 </section>

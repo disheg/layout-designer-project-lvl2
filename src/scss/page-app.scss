@@ -2,8 +2,39 @@
     columns: 2;
 }
 
+.app {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $mobile-size) {
+        flex-direction: column;
+    }
+    @media screen and (min-width: $mobile-size) {
+        gap: 144px;
+    }
+}
+
+.app-text {
+    @media screen and (min-width: $mobile-size) {
+        width: 50%;
+    }
+}
+
+.app-image {
+    @media screen and (max-width: $mobile-size) {
+        flex-direction: column;
+        order: -1;
+    }
+    @media screen and (min-width: $mobile-size) {
+        width: 50%;
+    }
+}
+
 .mt-64 {
     margin-top: 64px;
+}
+
+.px-100 {
+    padding: 100px 0 100px 0;
 }
 
 .pos-r {
@@ -24,4 +55,9 @@
 
 .red {
     background-color: $red;
+}
+
+.app {
+    display: flex;
+    justify-content: space-between;
 }
