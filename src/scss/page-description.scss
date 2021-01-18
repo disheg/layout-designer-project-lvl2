@@ -1,5 +1,6 @@
 .bg-description {
     background-image: url('../images/banner.png');
+    background-position: center;
 }
 
 .page-description {
@@ -12,13 +13,24 @@
 }
 
 .form {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 16px;
+    gap: 24px;
+    @media screen and (max-width: $mobile-size){
+        width: 100%;
+    }
 }
 
 .form-input {
     display: flex;
-    justify-content: space-between;
-    gap: 12px;
+    @media screen and (max-width: $mobile-size){
+        flex-direction: column;
+    }
+    @media screen and (min-width: $mobile-size){    
+        justify-content: space-between;
+        gap: 12px;
+    }
 }
 
 .input {
