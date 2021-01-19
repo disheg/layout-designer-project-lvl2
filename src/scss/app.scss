@@ -178,6 +178,16 @@ input {
   }
 }
 
+.header-search-input::placeholder {
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 
 /*** Footer ***/
 
