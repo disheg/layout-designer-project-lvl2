@@ -724,6 +724,7 @@ input {
   .navbar {
     flex-direction: column;
     margin-top: 17px;
+    gap: 3px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -731,11 +732,8 @@ input {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
   }
-}
-
-.nav-item {
-  margin-right: 12px;
 }
 
 .header-search-input {
