@@ -1,8 +1,6 @@
 .bg-description {
     background-image: url('../images/banner.png');
-    @media screen and (max-width: $mobile-size){
-        background-size: cover;
-    }
+    background-size: cover;
     background-position: center;
 }
 
