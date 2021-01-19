@@ -1,8 +1,7 @@
 .bg-description {
     background-image: url('../images/banner.png');
-    @media screen and (min-width: $mobile-size){
-        background-size: cover;
-    }
+    background-size: cover;
+
     background-position: center;
 }
 
@@ -19,6 +18,24 @@
     justify-content: center;
     align-items: center;
 }
+
+.page-description::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    background-image: url('../images/banner.png');
+    @media screen and (min-width: $mobile-size){
+        background-size: cover;
+    }
+    background-position: center;
+    opacity: 0.1;
+  
+    content: '';
+  }
+
 
 .page-description-title {
     margin-bottom: 30px;
