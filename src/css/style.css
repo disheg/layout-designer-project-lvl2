@@ -671,6 +671,7 @@ input {
 /*** Header ***/
 .header {
   display: flex;
+  font-weight: bold;
   margin-top: 25px;
 }
 @media screen and (max-width: 900px) {
@@ -732,7 +733,7 @@ input {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 24px;
   }
 }
 
@@ -746,6 +747,7 @@ input {
 @media screen and (max-width: 900px) {
   .header-search-input {
     margin-top: 18px;
+    width: 100%;
   }
 }
 
