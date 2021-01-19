@@ -35,25 +35,6 @@
     }
 }
 
-.form-input {
-    display: flex;
-    @media screen and (max-width: $mobile-size){
-        flex-direction: column;
-    }
-    @media screen and (min-width: $mobile-size){    
-        justify-content: space-between;
-        gap: 12px;
-    }
-}
-
-.form-input::placeholder {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-}
-
 .input {
     box-sizing: border-box;
 
