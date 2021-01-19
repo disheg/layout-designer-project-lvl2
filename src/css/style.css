@@ -222,7 +222,7 @@ h4 {
 .input {
   box-sizing: border-box;
   flex-grow: 1;
-  padding: 17px 22px 17px 22px;
+  padding: 16px 22px 18px 22px;
   height: 50px;
   border: 2px solid #CACACA;
   border-radius: 3px;
