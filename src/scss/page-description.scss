@@ -1,5 +1,6 @@
 .bg-description {
     background-image: url('../images/banner.png');
+    background-size: cover;
     background-position: center;
 }
 
@@ -15,6 +16,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.page-description-title {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $mobile-size){
+        margin-bottom: 16px;
+    }
 }
 
 .form {
