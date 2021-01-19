@@ -5,11 +5,16 @@
 
 .page-description {
     display: flex;
+
+    padding: 200px 0 200px 0;
+
+    @media screen and (max-width: $mobile-size){
+        padding: 250px 0 200px 0;
+    }
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    padding: 200px 0 200px 0;
 }
 
 .form {
@@ -44,6 +49,10 @@
 
     border: 2px solid #CACACA;
     border-radius: 3px;
+}
+
+.input::placeholder {
+    color: white;
 }
 
 .btn-description {
