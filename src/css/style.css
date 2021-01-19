@@ -181,13 +181,7 @@ h4 {
 }
 
 .bg-description {
-  background-image: url("../images/banner.png");
-  background-position: center;
-}
-@media screen and (max-width: 900px) {
-  .bg-description {
-    background-size: cover;
-  }
+  background: url("../images/banner.png") center/cover no-repeat;
 }
 
 .page-description {
