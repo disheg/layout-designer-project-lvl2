@@ -182,8 +182,12 @@ h4 {
 
 .bg-description {
   background-image: url("../images/banner.png");
-  background-size: cover;
   background-position: center;
+}
+@media screen and (min-width: 900px) {
+  .bg-description {
+    background-size: cover;
+  }
 }
 
 .page-description {
@@ -196,23 +200,6 @@ h4 {
 @media screen and (max-width: 900px) {
   .page-description {
     padding: 248px 0 200px 0;
-  }
-}
-
-.page-description::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url("../images/banner.png");
-  background-position: center;
-  opacity: 0.1;
-  content: "";
-}
-@media screen and (min-width: 900px) {
-  .page-description::before {
-    background-size: cover;
   }
 }
 
