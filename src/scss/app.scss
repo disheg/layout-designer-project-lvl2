@@ -137,17 +137,15 @@ input {
 }
 
 .header-logo {
-  margin-right: 16px;
-}
-
-.header-name {
   display: flex;
   align-items: center;
+  margin-right: 16px;
 }
 
 .logo {
   width: 24px;
   height: 24px;
+  margin-right: 16px;
 }
 
 .navbar {

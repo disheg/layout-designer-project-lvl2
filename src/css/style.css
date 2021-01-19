@@ -136,7 +136,7 @@ h4 {
 
 .fs-11 {
   font-size: 11px;
-  line-height: 12.89px;
+  line-height: 13px;
 }
 
 .text-center {
@@ -435,7 +435,7 @@ h4 {
 
 .fs-11 {
   font-size: 11px;
-  line-height: 12.89px;
+  line-height: 13px;
 }
 
 .text-center {
@@ -705,17 +705,15 @@ input {
 }
 
 .header-logo {
-  margin-right: 16px;
-}
-
-.header-name {
   display: flex;
   align-items: center;
+  margin-right: 16px;
 }
 
 .logo {
   width: 24px;
   height: 24px;
+  margin-right: 16px;
 }
 
 .navbar {
