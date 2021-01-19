@@ -27,6 +27,7 @@
 .form {
     display: flex;
     flex-wrap: wrap;
+    max-width: 570px;
     margin-top: 16px;
     gap: 24px;
     @media screen and (max-width: $mobile-size){
