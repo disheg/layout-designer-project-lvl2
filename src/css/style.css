@@ -160,12 +160,20 @@ h4 {
   background-color: #34c176;
 }
 
+.color-white {
+  color: white;
+}
+
 .color-orange {
   color: #f89202;
 }
 
 .color-gray {
   color: #e0e0e0;
+}
+
+.color-dark-gray {
+  color: #cacaca;
 }
 
 .transparent {
@@ -187,7 +195,7 @@ h4 {
 }
 @media screen and (max-width: 900px) {
   .page-description {
-    padding: 250px 0 200px 0;
+    padding: 248px 0 200px 0;
   }
 }
 
@@ -459,12 +467,20 @@ h4 {
   background-color: #34c176;
 }
 
+.color-white {
+  color: white;
+}
+
 .color-orange {
   color: #f89202;
 }
 
 .color-gray {
   color: #e0e0e0;
+}
+
+.color-dark-gray {
+  color: #cacaca;
 }
 
 .transparent {
@@ -747,6 +763,16 @@ input {
     margin-top: 18px;
     width: 100%;
   }
+}
+
+.header-search-input::placeholder {
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 /*** Footer ***/
