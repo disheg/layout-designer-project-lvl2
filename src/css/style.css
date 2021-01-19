@@ -714,9 +714,21 @@ input {
 }
 
 .logo {
+  position: relative;
+  margin-left: 40px;
+}
+
+.logo::before {
+  position: absolute;
+  top: -6px;
+  left: -40px;
+  display: inline-block;
   width: 24px;
   height: 24px;
-  margin-right: 18px;
+  background-size: 24px 24px;
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .navbar {
