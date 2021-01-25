@@ -3,12 +3,12 @@
 .header {
     display: flex;
   
-    @media screen and (max-width: $mobile-size){
+    @include media-mobile($mobile-size){
       flex-direction: column;
       margin-top: 32px;
     }
   
-    @media screen and (min-width: $mobile-size){
+    @mixin media-desktop ($size) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -20,11 +20,11 @@
   
   .header-left-side {
     display: flex;
-    @media screen and (max-width: $mobile-size){
+    @include media-mobile($mobile-size){
       flex-direction: column;
     }
     
-    @media screen and (min-width: $mobile-size){
+    @mixin media-desktop ($size) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -57,12 +57,13 @@
   
   .navbar {
     display: flex;
-    @media screen and (max-width: $mobile-size){
+
+    @include media-mobile($mobile-size){
       flex-direction: column;
       margin-top: 17px;
       gap: 3px;
     }
-    @media screen and (min-width: $mobile-size){
+    @mixin media-desktop ($size) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -79,7 +80,8 @@
     border-radius: 50px;
   
     background-color: $dark;
-    @media screen and (max-width: $mobile-size){
+
+    @include media-mobile($mobile-size){
       margin-top: 18px;
       width: 100%;
     }

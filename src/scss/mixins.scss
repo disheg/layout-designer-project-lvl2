@@ -1,0 +1,11 @@
+@mixin media-mobile ($size) {
+    @media screen and (max-width: $size){
+        @content;
+    }
+}
+
+@mixin media-desktop ($size) {
+    @media screen and (min-width: $size){
+        @content;
+    }
+}
