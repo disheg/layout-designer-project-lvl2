@@ -114,6 +114,10 @@ h4 {
   margin-top: 24px;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -410,6 +414,10 @@ h4 {
   margin-top: 24px;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -661,10 +669,6 @@ input {
   padding: 0 20px 0 20px;
 }
 
-.title {
-  margin-top: 100px;
-}
-
 @media (min-width: 1240px) {
   .container {
     width: 1240px;
@@ -712,11 +716,6 @@ input {
     align-items: center;
     gap: 88px;
   }
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
 }
 
 .logo {
