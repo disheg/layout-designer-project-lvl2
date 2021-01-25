@@ -8,7 +8,7 @@
       margin-top: 32px;
     }
   
-    @mixin media-desktop ($size) {
+    @include media-desktop($mobile-size) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -24,7 +24,7 @@
       flex-direction: column;
     }
     
-    @mixin media-desktop ($size) {
+    @include media-desktop($mobile-size) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -63,7 +63,7 @@
       margin-top: 17px;
       gap: 3px;
     }
-    @mixin media-desktop ($size) {
+    @include media-desktop($mobile-size) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
