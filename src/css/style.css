@@ -672,6 +672,11 @@ input {
     padding: 0 20px 0 20px;
   }
 }
+/*** Footer ***/
+.footer {
+  background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
+}
+
 /*** Header ***/
 .header {
   display: flex;
@@ -773,11 +778,6 @@ input {
   line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
-}
-
-/*** Footer ***/
-.footer {
-  background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
 }
 
 /*# sourceMappingURL=style.css.map */
