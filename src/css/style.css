@@ -676,11 +676,11 @@ input {
 .header {
   display: flex;
   font-weight: bold;
-  margin-top: 25px;
 }
 @media screen and (max-width: 900px) {
   .header {
     flex-direction: column;
+    margin-top: 32px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -688,6 +688,7 @@ input {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 25px;
   }
 }
 

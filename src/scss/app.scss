@@ -108,17 +108,17 @@ input {
 
   @media screen and (max-width: $mobile-size){
     flex-direction: column;
+    margin-top: 32px;
   }
 
   @media screen and (min-width: $mobile-size){
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 25px;
   }
 
   font-weight: bold;
-
-  margin-top: 25px;
 }
 
 .header-left-side {
